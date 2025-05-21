@@ -23,7 +23,7 @@ body {
     width: 20%;
     padding: 2%;
     max-height: 15%;
-    opacity: 0.8;
+    opacity: 0.5;
     transition: 0.2s;
     position: relative;
     z-index: 1;
