@@ -1,0 +1,146 @@
+
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.lagu {
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    border: 2px solid rgb(148, 148, 148);
+    width: 20%;
+    padding: 2%;
+    max-height: 15%;
+    opacity: 0.8;
+    transition: 0.2s;
+    position: relative;
+    z-index: 1;
+}
+.lagu *:not(.video-background) {
+    position: relative;
+    z-index: 1;
+}
+
+.lagu:hover {
+    background-color: rgb(235, 235, 235);
+    border: 1px solid rgb(159, 15, 255);
+    opacity: 1;
+    box-shadow: 0px 0px 10px rgb(159, 15, 255);
+}
+
+.lagu h2 {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.lagu:hover h2 {
+    color: rgb(143, 123, 228);
+}
+.lagu h4 {
+    margin: 0;
+    color: rgb(0, 0, 0);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: larger;
+}
+.lagu:hover h4 {
+    color: rgb(143, 123, 228);
+}
+.lagu h3,small {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.lagu img {
+    border-radius: 10px;
+    object-fit: cover;
+    aspect-ratio: 1/1; 
+    width: 60%;
+    justify-content: center;
+    -webkit-user-drag: none;
+    transition: 3s;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.lagu:hover img {
+    box-shadow: 0px 0px 30px rgb(143, 123, 228);
+}
+.bawah {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+    width: 100%;
+    justify-content: center;
+}
+
+.bawah div {
+    max-width: 50%;
+    overflow: hidden;
+}
+
+
+.kiri h3, .kanan h3 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    flex-shrink: 1;
+    max-width: 100%;
+}
+
+.kanan {
+    margin-left: 20px;
+}
+
+.bawah .material-icons{
+    vertical-align: middle;
+    padding-bottom: 2px;
+    margin-right: 3px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+.bawah .material-icons:hover {
+    text-shadow:0px 0px 5px rgb(109, 109, 109);
+}
+
+
+.bawah .material-icons:active{
+   transform: scale(1.2);
+   color:rgb(143, 123, 228);
+}
+.playpause i{
+    font-size: xx-large;
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: 0.1s;
+}
+.playpause i:hover {
+    color: rgb(143, 123, 228);
+    text-shadow:0px 0px 10px rgb(143, 123, 228);
+}
+.audio-button {
+    border: 0px;
+    background: none;
+}
