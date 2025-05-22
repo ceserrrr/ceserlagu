@@ -147,7 +147,3 @@ body {
     display: flex;
     justify-content: center;
 }
-.header h2 {
-    color: purple;
-    outline: 1px blue;
-}
