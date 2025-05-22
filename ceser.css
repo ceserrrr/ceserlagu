@@ -143,7 +143,11 @@ body {
     border: 0px;
     background: none;
 }
-.header{
+.header {
     display: flex;
     justify-content: center;
+}
+.header h2 {
+    color: purple;
+    outline: 1px blue;
 }
